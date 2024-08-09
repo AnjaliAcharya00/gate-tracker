@@ -1,0 +1,10 @@
+<h1>This is the fucking home page</h1>
+
+<% if(currentUser != null){ %>
+    <p><a href="/profile/<%= currentUser._id %>">Welcome <%= currentUser.username %></a></p>
+    <a href="/logout">Logout</a>
+    <a href="/add">Add Details</a>
+<% } else { %>
+    <a href="/login">Login</a>
+    <a href="/signup">Signup</a>
+<% } %>
