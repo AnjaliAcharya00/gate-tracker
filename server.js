@@ -96,7 +96,7 @@ app.post("/api-call", isLoggedIn, async function(req, res){
 
     var id = youtube_parser(link);
 
-    var url = "https://www.googleapis.com/youtube/v3/videos?id=" + id + "&key=AIzaSyCaxLXyB99n1t6XT3kWJaYgaJKmO8Bf7ok&part=snippet,contentDetails,statistics,status";
+    var url = "https://www.googleapis.com/youtube/v3/videos?id=" + id + "&key=key&part=snippet,contentDetails,statistics,status";
     try {
         const meow = await fetch(url);
     
